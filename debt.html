@@ -9,54 +9,70 @@
 </head>
 
     <body>
+      <header>
+		  <div>
+			<nav>
+				<a href="products.html">Products</a>&nbsp&nbsp&nbsp&nbsp&nbsp|
+				<a href="about.html">About</a>
+				<a href="account.html" id='myaccountbutton'>My Account</a>
+			</nav>
+			<hr>
+		  </div>
+      <a href="index.html">
+		  <img src="fBayimages/logo.jpg" alt="fbay" id="logo">
+      </a>
+        <input type="text" placeholder="Search.." id='searchbar'>
+        <input type="button" value="Search" id='searchbutton'></a>
+	  </header>
         <main>
 
             <h1>What you could've done...</h1>
 
             <p id="donation">Fail</p>
+            <a href="" id="donationL">Donate</a>
 
         </main>
         <script>
-            var debt = 100;
-			switch(Math.random()*7){
+            var debt = 10000;
+			switch(Math.floor(Math.random()*6)){
 				case 0:
 					document.getElementById("donation").innerHTML = "You could have provided " + Math.floor((debt/10)) + " family(s) with matresses so they don't have to sleep on the floor."
+                    document.getElementById("donationL").href = "https://donate.unhcr.org/int/general/~my-donation#";
 					break;
 				case 1:
 					document.getElementById("donation").innerHTML = "You could have given " + Math.floor((debt/20) * 4) + " family(s) with 15L buckets to transport clean water."
+                    document.getElementById("donationL").href = "https://donate.unhcr.org/int/general/~my-donation#";
 					break;
 				case 2:
 					document.getElementById("donation").innerHTML = "You could have given " + Math.floor((debt/30) * 2) + " family(s) with kitchen devices to prepare food."
+                    document.getElementById("donationL").href = "https://donate.unhcr.org/int/general/~my-donation#";
 					break;
 				case 3:
 					if(debt > 75){
 					
 						document.getElementById("donation").innerHTML = " You could have given " + Math.floor((debt/75)) + " kid(s) vaccines."
+                        document.getElementById("donationL").href = "https://donate.unicefusa.org/page/contribute/help-save-childrens-lives-29161";
 					
 					}
 					else{
 						document.getElementById("donation").innerHTML = "You could have sent your money to the Red Cross to help across the world in medical affairs."
+                        document.getElementById("donationL").href = "https://www.icrc.org/en/donate";
 					}
 					break;
 				case 4:
 					document.getElementById("donation").innerHTML = "You could have sent your money to the IFRC to help with disaster relief across the world."
+                    document.getElementById("donationL").href = "https://www.ifrc.org/en/donate-us/";
 					break;
 				case 5:
 					document.getElementById("donation").innerHTML = "You could have sent your money to OCHA to help with humanitarian affairs around the world."
+                    document.getElementById("donationL").href = "https://www.unocha.org/our-work/humanitarian-financing/country-based-pooled-funds-cbpf/how-support-country-based-pooled";
 					break;
 				case 6:
 					document.getElementById("donation").innerHTML = "You could have sent your money to Care to help impoverished kid(s)";
+                    document.getElementById("donationL").href = "https://my.care.org/site/Donation2";
 					break;
 			}
         </script>
     </body>
-
-</html>
-	</script>
-</body>
-
-</html>
-	</script>
-</body>
 
 </html>

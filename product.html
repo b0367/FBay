@@ -7,17 +7,33 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-	  <header></header>
+	  <header>
+		  <div>
+			<nav>
+				<a href="products.html">Products</a>&nbsp&nbsp&nbsp&nbsp&nbsp|
+				<a href="about.html">About</a>
+				<a href="account.html" id='myaccountbutton'>My Account</a>
+			</nav>
+			<hr>
+		  </div>
+      <a href="index.html">
+		  <img src="fBayimages/logo.jpg" alt="fbay" id="logo">
+      </a>
+        <input type="text" placeholder="Search.." id='searchbar'>
+        <input type="button" value="Search" id='searchbutton'></a>
+	  </header>
 	  <main>
-		<h1>Bread Gloves</h1>
-		<img src="fBayimages/breadgloves.jpg">
-		<p>Seller: Bread Gloves Co.</p>
-		<p>Make anything into a sandwich!</p>
-		<p>$300</p>
+		<h1 id="name"></h1>
+		<img id="imgurl">
+		<p id="description"></p>
+		<p id="price"></p>
 		<p>2 more in stock</p>
-		<input type=button value='Buy Now!'>
+		<input type="button" value="Bid Now!">
 	  <footer></footer>
-	  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
     <script src="product.js"></script>
   </body>
 </html>

@@ -4,29 +4,89 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>fBay</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
 	  <header>
 		  <div>
 			<nav>
-				<a href='products.html'>Products</a>
-				<a href='about.html'>About</a>
-				<a href='account.html'>My Account</a>
-				<a href='debt.html'>Debt(holder)</a>
-				<a href='product.html'>Product(holder)</a>
+				<a href="products.html">Products</a>&nbsp&nbsp&nbsp&nbsp&nbsp|
+				<a href="about.html">About</a>
+				<a href="account.html" id="myaccountbutton">My Account</a>
 			</nav>
 			<hr>
 		  </div>
-		  <img id='logo' src='fBayimages/logo.jpg' alt='fbay'>
-		  <input type="text" placeholder="Search..">
+      <a href="index.html">
+		  <img src="fBayimages/logo.jpg" alt="fbay" id="logo">
+      </a>
+        <input type="text" placeholder="Search.." id="searchbar">
+        <input type="button" value="Search" id="searchbutton">
 	  </header>
 	  <main>
 
+      <div class="slideshow-container">
+        
+        <div class="slideshow-item">
+				<a href="product.html?id=0">
+					<img src="fBayimages/breadgloves.jpg" alt="bread gloves packaging image" class="productimages">
+				</a>
+			</div>
+
+			<div class="slideshow-item">
+				<a href="product.html?id=1">
+					<img src="fBayimages/nosewarmer.jpg" alt="girl wearing a nose warmer" class="productimages">
+				</a>
+			</div>
+
+			<div class="slideshow-item">
+				<a href="product.html?id=2">
+					<img src="fBayimages/petrock.jpg" alt="pet rock kit; includes rock, certificate or ownership, and housing" class="productimages">
+				</a>
+			</div>
+
+			<div class="slideshow-item">
+				<a href="product.html?id=3">
+					<img src="fBayimages/dietwater.jpg" alt="mini bottles of diet water" class="productimages">
+				</a>
+			</div>
+
+			<div class="slideshow-item">
+				<a href="product.html?id=4">
+					<img src="fBayimages/testamints.jpg" alt="testamints in a pile" class="productimages">
+				</a>
+			</div>
+
+			<div class="slideshow-item">
+				<a href="product.html?id=5">
+					<img src="fBayimages/microphonesponge.jpg" alt="man singing in shower with the microphone sponge" class="productimages">
+				</a>
+			</div>
+
+		  <div class="slideshow-item">
+				<a href="product.html?id=6">
+					<img src="fBayimages/sunglassesblinds.jpg" alt="singlasses with blinds instead of lenses" class="productimages">
+				</a>
+			</div>
+
+			<div class="slideshow-item">
+				<a href="product.html?id=7">
+					<img src="fBayimages/toiletpaper.jpg" alt="glow in the dark toilet paper packaging" class="productimages">
+				</a>
+			</div>
+
+			<div class="slideshow-item">
+				<a href="product.html?id=8">
+					<img src="fBayimages/squattypotty.jpg" alt="a squatty potty against a toilet" class="productimages">
+				</a>
+      </div>
+      
+      </div>
+      
 	  </main>
 	  <footer>
 		  <hr>
 		  <p>Copyright &#169; 2019 fBay Inc. All Rights Reserved</p>
 	  </footer>
+    <script src="script.js"></script>
   </body>
 </html>
