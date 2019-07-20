@@ -107,10 +107,11 @@ img {
   vertical-align: middle;
 }
 
-footer {
-  font-size: small;
+#releases {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
-footer hr {
-  margin-top: 30px;
-}
+#about {}
