@@ -24,15 +24,15 @@
 	  </header>
         <main>
           <center>
-            <h1 if="debtt"></h1>
+            <h1 id="debtt">Failure</h1>
 
             <p id="donation">Fail</p>
             <a href="" id="donationL">Donate</a>
           </center>
         </main>
         <script>
-          var debt = 10000;
-          document.getElementById("donation").innerHTML = "What you could've done with your $" + debt + " debt...";
+          var debt = 2432443.543;
+          document.getElementById("debtt").innerHTML = "What you could've done with your $" + debt.toLocaleString("en") + " debt...";
 			switch(Math.floor(Math.random()*6)){
 				case 0:
 					document.getElementById("donation").innerHTML = "You could have provided " + Math.floor((debt/10)) + " family(s) with matresses so they don't have to sleep on the floor."
