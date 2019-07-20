@@ -31,8 +31,8 @@
           </center>
         </main>
         <script>
-          document.getElementById("donation").innerHTML = 
           var debt = 10000;
+          document.getElementById("donation").innerHTML = "What you could've done with your $" + debt + " debt...";
 			switch(Math.floor(Math.random()*6)){
 				case 0:
 					document.getElementById("donation").innerHTML = "You could have provided " + Math.floor((debt/10)) + " family(s) with matresses so they don't have to sleep on the floor."
