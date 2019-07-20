@@ -109,9 +109,15 @@ img {
 
 #releases {
   text-align: center;
+}
+
+#newreleases {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
 }
 
-#about {}
+#about {
+  margin: 10px;
+  width: 100;
+}
