@@ -47,6 +47,8 @@
         <a href="products.html"><input type="button" value="Search" id='searchbutton'></a>
 	  </header>
 	  <main>
+      <p hidden id="increment"></p>
+      <p hidden id="rawcurrent"></p>
 		<h1 id="name"></h1>
 		<span id='productdescription'><img id="imgurl">
       <p id="description"></p></span>
@@ -54,7 +56,7 @@
         <p style='font-size: small;' id='price'>List Price:</p>
       <p style='font-size: small;' id='current'>Now:</p>
         <p style='font-weight: bold'>2 more in stock</p>
-		<input type="button" value="Bid Now!">
+		<input type="button" value="Bid Now!" onclick="return SubmitBid();">
         
         <p id="timerDisplay">01:00</p>
         
