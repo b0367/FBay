@@ -15,7 +15,7 @@ header nav a:hover {
 	font-size: small;
 }
 
-header nav a {
+header a {
   text-decoration: none;
 }
 
@@ -24,8 +24,15 @@ header nav a {
   background-color: hsl(208, 100%, 92%);
 }
 
+#logo {
+	width: 100px;
+  margin: 0px;
+  border: none;
+}
+
 .dropdown {
-  position: relative;
+  float: right;
+  margin-right: 20px;
   display: inline-block;
 }
 
@@ -39,15 +46,15 @@ header nav a {
   z-index: 1;
 }
 
+.dropdown-content ul {
+  list-style-type: none;
+  padding: 0;
+  line-height: 150%;
+}
+
 .dropdown:hover .dropdown-content {
   display: block;
-}
-}**/
-
-#logo {
-	width: 100px;
-  margin: 0px;
-  border: none;
+}ne;
 }
 
 #searchbar {
