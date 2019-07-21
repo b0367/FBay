@@ -232,21 +232,39 @@ center {
 
 .accountimg {
   float: left;
-  margin-right: 30px;
+  margin-right: 40px;
+  margin-left: 20px;
+  margin-top: 50px;
 }
 
 .accountname {
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
-.signout {
-  background-color: hsl(209, 83%, 30%);
-  color: white;
-  border-color: hsl(209, 83%, 30%);
-  width: 80px;
-  height: 40px;
-  border-radius: 10%;
-  font-weight: bold;
+#email {text-decoration: underline;}
+
+table, th, td {
+  border: 2px solid black;
+}
+
+table {
+  border-collapse: collapse;
+  margin-top: 40px;
+}
+
+th, td {
+  padding: 10px;
+}
+
+.signout {  
+  float: right;
+  margin-right: 20px;
+  margin-left: -5px;
+  margin-top: 2px;
+}
+
+.signout:hover {
+  margin-left:-5px;
 }
 
 #topBtn {
