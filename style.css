@@ -19,9 +19,8 @@ header a {
   text-decoration: none;
 }
 
-#myaccountbutton {
-  float: right;
-  margin-right: 20px;
+#headerbar {
+  box-shadow: 0 5px 5px -5px grey;
 }
 
 #logo {
@@ -32,6 +31,10 @@ header a {
 
 #searchbar {
   width: 50%;
+  height: 35px;
+  padding-left: 10px;
+  padding: none;
+  font-size: 16px;
 }
 
 input[type="button"] {
@@ -49,8 +52,15 @@ img {
 	border: 2px solid black;
 }
 
+#gallery {
+  margin-left: auto;
+  Margin-right: auto;
+  width: 87%;
+  clear: none;
+}
+
 div.gallery {
-	margin-left: 40px;
+	margin-left: 55px;
   margin-top: 20px;
   float: left;
   margin-bottom: 20px;
@@ -59,7 +69,32 @@ div.gallery {
 div.desc {
   margin-top: 5px;
   text-align: center;
-}		
+}	
+
+img[src*='foodad'] {
+  float: left;
+  margin-top: -400px;
+  margin-left: 35px;
+  border: none;
+  }
+img[src*='computerad'] {
+  float: right;
+  margin-top: -300px;
+  margin-right: 20px;
+  border: none;
+  }
+img[src*='suavead'] {
+  position: fixed;
+  margin-top: 10px;
+  margin-left: 200px;
+  mergin-right: auto;
+  width: 60%;
+  border: none;
+}
+div a img {
+  width: 100%;
+  background-color: white;
+}
 
 form {
   background-color: white;
@@ -69,6 +104,11 @@ form {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+}
+
+form h2 {
+  text-align: center;
+  margin-top: 0;
 }
 
 input[type='submit'] {
@@ -85,13 +125,14 @@ input[type='submit'] {
 #form {
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 30%;
 }
 
 .slideshow-container {
   position: relative;
   margin: 0 auto;
   text-align: center;
+  margin-top: 20px;
 }
 
 .slideshow-item {
@@ -114,10 +155,63 @@ img {
 #newreleases {
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 80%;
 }
 
-#about {
-  margin: 10px;
-  width: 100;
+.about {
+  margin-left: 30px;
+  max-width: 600px;
+}
+
+h1.about {
+  margin-top: 40px;
+}
+
+p.about {
+  line-height: 175%;
+}
+
+.about a {
+  color: black;
+  target: _blank;
+}
+
+center a {
+  color: black;
+  font-weight: bold;
+}
+
+.accountimg {
+  float: left;
+  margin-right: 30px;
+}
+
+.accountname {
+  margin-top: 30px;
+}
+
+.dropdown {
+  display: inline-block;
+  float: right;
+  margin-right: 20px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown-content ul {
+  list-style-type: none;
+  padding: 0;
+  line-height: 150%;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
