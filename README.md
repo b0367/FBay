@@ -1,7 +1,7 @@
 fBay
 =================
 
-# Hosted on fbay.glitch.me as github pages doesn't work great
+# Hosted on [fbay.glitch.me](http://www.fbay.glitch.me) as github pages doesn't work great
 
 The aim of fBay is to bring people from different backgrounds into one big community.
 
