@@ -6,6 +6,12 @@
 		<title>fBay</title>
         <link rel="icon" href="fBayimages/logo.jpg">
 		<link href="style.css" rel="stylesheet" type="text/css" />
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    <script src="account.js"></script>
+    
 	</head>
 	<body>
 		<header>
@@ -13,28 +19,37 @@
 			<nav>
 				<a href="products.html">Products</a>&nbsp&nbsp&nbsp&nbsp&nbsp|
 				<a href="about.html">About</a>&nbsp&nbsp&nbsp&nbsp&nbsp|
-        <a href='#newreleases'>New Releases</a>
+        <a href='index.html#newreleases'>New Releases</a>
         <div class='dropdown'>
           <span id='myaccountbutton'><a href="account.html">My Account</a></span>
           <div class='dropdown-content'><ul>
             <li><a href='debt.html'>Debt</a></li>
-            <li><a href='settings.html'>Settings</a></li>
-            </ul></div>
+            <li><a href='register.html'>Settings</a></li>
+            <li><a href='login.html'>Login</a></li>
+            </ul>
+          </div>
         </div>
 			</nav>
+        
       <hr>
+        
 		  </div>
       <a href="index.html">
 		  <img src="fBayimages/logo.jpg" alt="fbay" id="logo">
       </a>
         <input type="text" placeholder="Search for anything" id='searchbar'>
-        <input type="button" value="Search" id='searchbutton'></a>
+        <a href="products.html"><input type="button" value="Search" id='searchbutton'></a>
 	  </header>
+  
 		<main>
 		<img src="fBayimages/person.jpg" alt="You" class="accountimg">
-    <h1 class="accountname">John Smith</h1>
-    
+    <h1 class="accountname" id="name">John Smith</h1>
+    <p id="email">
+      e@e.e
+      </p>
 		</main>
+    <script>      
+    </script>
 	</body>
 
 </html>

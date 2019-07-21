@@ -1,4 +1,4 @@
-FBay
+fBay
 =================
 
 The aim of fBay is to bring people from different backgrounds into one big community.

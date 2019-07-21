@@ -6,12 +6,31 @@
 		<title>fBay</title>
         <link rel="icon" href="fBayimages/logo.jpg">
 		<link href="style.css" rel="stylesheet" type="text/css" />
-    
     <style>
-      main p {
-        line-height: 150%;
+      .background{
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        filter: blur(5px);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        backdrop-filter: blur(20px);
+      }
+      body{
+        overflow:hidden;
+      }
+      form {
+        color: white;
       }
     </style>
+     <script src='login.js'></script>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
 	</head>
 	<body>
 		<header>
@@ -38,29 +57,17 @@
         <a href="products.html"><input type="button" value="Search" id='searchbutton'></a>
 	  </header>
 		<main>
-			<h1 class="about">About</h1>
-			<p class="about">The aim of fBay is to
-      bring people from different backgrounds 
-      into one big community to talk and accumulate 
-      unnecessary items. Here we take pride in goods 
-      that have absolutely no use, and waste your money 
-      that could go to a good cause (visit the 'Debt' 
-      page in the 'My Account' page).
-      Our specialized users can put 
-      items they no longer want up for sale, 
-      and then everyone else can bid on that item, until 
-      the sales close. Bidding here initiates deep conversation,
-      and can spark relationships that last for a lifetime (in other 
-      cases it just leads to heated arguments, but our philosophy 
-      here is 'You can't win it all!').
-      We hope you enjoy our site, and feel free to contact our staff at 
-      <a href="mailto:jultep831@gmail.com">jultep830@gmail.com</a>.</p>
-      
-      <a href="https://www.amazon.com/s?k=kellogs&i=pantry&srs=7301146011&ref=nb_sb_noss_2" target="_blank">
-      <img src='fBayimages/cheezitad.png'>
-      </a>
-      
-      
+      <img src="fBayimages/computer2.jpg" class="background"/>
+			<form>
+        <h2>Login</h2><br>
+        <div id='form'>
+          Username: <br>
+          <input type='text' name='username' id='username'><br><br>
+          Password: <br>
+          <input type='password' name='password' id='password'><br><br>
+          <input type='button' value='Login' onclick="return Login();">
+        </div>
+			</form>
 		</main>
 	</body>
 </html>
