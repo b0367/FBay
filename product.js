@@ -9,3 +9,17 @@ $.getJSON("https://fbay-server.herokuapp.com/items/?id=" + urlParams.get("id"), 
   document.getElementById("price").innerText = "$" + realjson.price;
   document.getElementById("current").innerText = "$" + (realjson.price + ((Math.floor(Math.random() * 25) + 25) * realjson.increment));
 });
+
+function timer(){
+    var sec = 59;
+    var timer = setInterval(function(){
+        document.getElementById('timerDisplay').innerHTML='00:'+sec;
+        sec--;
+        if (sec < 0) {
+            document.getElementById('timerDisplay').innerHTML="Time's Up!"
+            document.getElementById('timerDisplay').style.color = "red";
+        }
+    }, 1000);
+}
+
+timer();

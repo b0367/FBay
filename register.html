@@ -7,6 +7,22 @@
         <link rel="icon" href="fBayimages/logo.jpg">
 		<link href="style.css" rel="stylesheet" type="text/css" />
     <script src='register.js'></script>
+    <style>
+      form {
+          position: relative;
+        }
+      form::before {
+          content: "";
+          position: absolute;
+          top: 0; left: 0;
+          width: 100%; height: 100%;
+          background-image: url(fBayimages/computer1.jpg);
+          filter: blur(3px);
+        }
+      form h2, form div {
+          position: relative;
+        }
+    </style>
 	</head>
 	<body>
 		<header>

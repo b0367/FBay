@@ -101,13 +101,14 @@ img[src*='suavead'] {
 }
 
 form {
-  background-color: hsl(91, 99%, 42%, 40%);
+  background-color: hsl(95, 99%, 30%, 40%);
   padding: 50px;
   font-weight: bold;
-  border: 2px solid black;
+  border: 4px solid black;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+  height: 400px;
   margin-top: 20px;
 }
 
@@ -204,6 +205,12 @@ center+a img {
 
 .accountname {
   margin-top: 30px;
+}
+
+.signout {
+  display: inline-block;
+  float: right;
+  margin-right: 20px;
 }
 
 .dropdown {
