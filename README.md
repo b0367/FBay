@@ -1,6 +1,8 @@
 fBay
 =================
 
+# Hosted on fbay.glitch.me as github pages doesn't work great
+
 The aim of fBay is to bring people from different backgrounds into one big community.
 
 Here, you can talk and accumulate unnecessary items. 
