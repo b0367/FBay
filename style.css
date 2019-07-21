@@ -54,7 +54,6 @@ header a {
 
 .dropdown:hover .dropdown-content {
   display: block;
-}ne;
 }
 
 #searchbar {
@@ -241,9 +240,13 @@ center {
 }
 
 .signout {
-  display: inline-block;
-  float: right;
-  margin-right: 20px;
+  background-color: hsl(209, 83%, 30%);
+  color: white;
+  border-color: hsl(209, 83%, 30%);
+  width: 80px;
+  height: 40px;
+  border-radius: 10%;
+  font-weight: bold;
 }
 
 #topBtn {

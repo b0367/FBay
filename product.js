@@ -29,6 +29,8 @@ function timer(){
                let username = data.username;
                 if(username === getCookie("username").split("=")[1]){
                   alert("You won the item! Congratulations!");
+                }else{
+                  alert("You didn't quite get it this time :(")
                 }
                let amount = data.amount;
                 $.getJSON("https://fbay-server.herokuapp.com/users/adddebt?username=" + username + "&debt=" + amount, function(data){

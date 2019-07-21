@@ -6,7 +6,7 @@
     <title>fBay</title>
     <link rel="icon" href="fBayimages/logo.jpg">
     <link href="style.css" rel="stylesheet" type="text/css"/>
-  </head>
+    </head>
   <body>
 	  <header>
       <div id='headerbar'>
@@ -14,12 +14,12 @@
 				<a href="products.html">Products</a>&nbsp&nbsp&nbsp&nbsp&nbsp|
 				<a href="about.html">About</a>&nbsp&nbsp&nbsp&nbsp&nbsp|
         <a href='index.html#newreleases'>New Releases</a>
-        <input type="button" value="Sign Out" class="signout">
+        <button value="Sign Out" class="signout" onclick="return delete_cookie('username');">
         <div class='dropdown'>
           <span id='myaccountbutton'><a href="account.html">My Account</a></span>
           <div class='dropdown-content'><ul>
             <li><a href='debt.html'>Debt</a></li>
-            <li><a href='register.html'>Settings</a></li>
+            <li><a href='register.html'>Register</a></li>
             <li><a href='login.html'>Login</a></li>
             </ul></div>
         </div>
@@ -128,6 +128,11 @@
       <button onclick="jumpTop()" id="topBtn" title="Go to top"><b>^</b></button>
       
 	  </main>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
     <script src="gallery.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
