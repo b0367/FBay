@@ -7,6 +7,7 @@ function Login(){
         setCookie("username", realJSON.username);
         document.getElementById('username').value = "";
         document.getElementById('password').value = "";
+                  window.location = "index.html";
       }
       else{
         alert("Incorrect Username or Password");
@@ -14,7 +15,9 @@ function Login(){
     });
   }
   else{
+    
     alert("You're already logged in!");
+    window.location = "index.html";
   }
 }
 

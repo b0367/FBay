@@ -14,4 +14,6 @@ function Register(){
   document.getElementById('username').value = "";
   document.getElementById('email').value = "";
   document.getElementById('password').value = "";
+  alert("successfully registered!");
+  window.location = "login.html";
 }
