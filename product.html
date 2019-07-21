@@ -8,7 +8,7 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
     <style>
       main {
-        background-color: rgb(200, 200, 200);
+        background-color: hsl(227, 40%, 70%);
         height: 400px;
         padding: 20px;
         padding-top: 2px;
@@ -32,10 +32,13 @@
             <li><a href='debt.html'>Debt</a></li>
             <li><a href='register.html'>Settings</a></li>
             <li><a href='login.html'>Login</a></li>
-            </ul></div>
+            </ul>
+          </div>
         </div>
 			</nav>
+        
       <hr>
+        
 		  </div>
       <a href="index.html">
 		  <img src="fBayimages/logo.jpg" alt="fbay" id="logo">
@@ -47,16 +50,16 @@
 		<h1 id="name"></h1>
 		<span id='productdescription'><img id="imgurl">
       <p id="description"></p></span>
-      <span id='productinfo'><p style='font-weight: bold'>List Price:</p><p id="price"></p>
-      <p style='font-weight: bold'>Now:</p><p id="current">
-        $100
-        </p>
+      <span id='productinfo'>
+        <p style='font-size: small;' id='price'>List Price:</p>
+      <p style='font-size: small;' id='current'>Now:</p>
         <p style='font-weight: bold'>2 more in stock</p>
 		<input type="button" value="Bid Now!">
         
         <p id="timerDisplay">01:00</p>
         
-        <button onclick="jumpTop()" id="topBtn" title="Go to top"><b>^</b></button></span>
+        <button onclick="jumpTop()" id="topBtn" title="Go to top"><b>^</b></button>
+      </span>
       <a href="https://www.thermos.com/" id="adlink">
         <img id='ad'></a>
 	  </main>

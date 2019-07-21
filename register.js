@@ -1,11 +1,11 @@
-  var xhttp = new XMLHttpRequest();
+var xhttp = new XMLHttpRequest();
 
 xhttp.onload = function(){
-    console.log(xhttp.status);
-    if(xhttp.status != 200){
-      alert('This username is already taken!');
-    }
+  console.log(xhttp.status);
+  if(xhttp.status != 200){
+    alert('This username is already taken!');
   }
+}
 
 function Register(){
   console.log("ye");

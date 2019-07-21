@@ -4,8 +4,9 @@ function Login(){
     function(data){
       let realJSON = JSON.parse(data.message);
       if(realJSON.password === document.getElementById('password').value){
-        alert(realJSON.username + " " + realJSON.password + " " + realJSON.email);  
         setCookie("username", realJSON.username);
+        document.getElementById('username').value = "";
+        document.getElementById('password').value = "";
       }
       else{
         alert("Incorrect Username or Password");
@@ -13,8 +14,7 @@ function Login(){
     });
   }
   else{
-    alert("YEET");
-    window.location.assign('http://www.example.com/');
+    alert("You're already logged in!");
   }
 }
 

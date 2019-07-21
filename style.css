@@ -15,7 +15,7 @@ header nav a:hover {
 	font-size: small;
 }
 
-header a {
+header nav a {
   text-decoration: none;
 }
 
@@ -23,6 +23,26 @@ header a {
   box-shadow: 0 5px 5px -5px grey;
   background-color: hsl(208, 100%, 92%);
 }
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+}**/
 
 #logo {
 	width: 100px;
@@ -161,8 +181,8 @@ input[type='submit'] {
 }
 
 .about {
-  margin-left: 30px;
-  max-width: 600px;
+  margin-left: 50px;
+  max-width: 650px;
 }
 
 h1.about {
@@ -172,7 +192,7 @@ h1.about {
 p.about {
   line-height: 175%;
   float: left;
-  margin-right: 200px;
+  margin-right: 140px;
 }
 
 .about a {
@@ -191,6 +211,12 @@ center+a img {
   left: -1px;
   width: 100%;
 }
+
+center {
+  margin-top: 50px;
+}
+
+#donation {color: grey;}
 
 #pringlead {
   position: relative;
@@ -211,32 +237,6 @@ center+a img {
   display: inline-block;
   float: right;
   margin-right: 20px;
-}
-
-.dropdown {
-  display: inline-block;
-  float: right;
-  margin-right: 20px;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  padding: 12px 16px;
-  z-index: 1;
-}
-
-.dropdown-content ul {
-  list-style-type: none;
-  padding: 0;
-  line-height: 150%;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
 }
 
 #topBtn {
@@ -273,4 +273,7 @@ center+a img {
   right: 0;
   margin-right: 20px;
   bottom: 0;
+}
+p.thicker{
+  font-weight: 1000;
 }
