@@ -3,9 +3,21 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
+    <title>fBay</title>
         <link rel="icon" href="fBayimages/logo.jpg">
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+      main {
+        background-color: rgb(200, 200, 200);
+        height: 400px;
+        padding: 20px;
+        padding-top: 2px;
+        padding-bottom: 40px;
+        margin-top: 20px;
+        margin-left: 20px;
+        width: 70%;
+      }
+    </style>
   </head>
   <body>
 	  <header>
@@ -13,12 +25,13 @@
 			<nav>
 				<a href="products.html">Products</a>&nbsp&nbsp&nbsp&nbsp&nbsp|
 				<a href="about.html">About</a>&nbsp&nbsp&nbsp&nbsp&nbsp|
-        <a href='#newreleases'>New Releases</a>
+        <a href='index.html#newreleases'>New Releases</a>
         <div class='dropdown'>
           <span id='myaccountbutton'><a href="account.html">My Account</a></span>
           <div class='dropdown-content'><ul>
             <li><a href='debt.html'>Debt</a></li>
-            <li><a href='settings.html'>Settings</a></li>
+            <li><a href='register.html'>Settings</a></li>
+            <li><a href='login.html'>Login</a></li>
             </ul></div>
         </div>
 			</nav>
@@ -28,26 +41,45 @@
 		  <img src="fBayimages/logo.jpg" alt="fbay" id="logo">
       </a>
         <input type="text" placeholder="Search for anything" id='searchbar'>
-        <input type="button" value="Search" id='searchbutton'></a>
+        <a href="products.html"><input type="button" value="Search" id='searchbutton'></a>
 	  </header>
 	  <main>
 		<h1 id="name"></h1>
-		<img id="imgurl">
-		<p id="description"></p>
-		<p id="price"></p>
-		<p>2 more in stock</p>
-      <p id="current">
+		<span id='productdescription'><img id="imgurl">
+      <p id="description"></p></span>
+      <span id='productinfo'><p style='font-weight: bold'>List Price:</p><p id="price"></p>
+      <p style='font-weight: bold'>Now:</p><p id="current">
         $100
-      </p>
-      <p id="increment">
-        $1
-      </p>
+        </p>
+        <p style='font-weight: bold'>2 more in stock</p>
 		<input type="button" value="Bid Now!">
-	  <footer></footer>
+        <button onclick="jumpTop()" id="topBtn" title="Go to top"><b>^</b></button></span>
+      <a href="https://www.thermos.com/" id="adlink">
+        <img id='ad'></a>
+	  </main>
+    <script src="gallery.js"></script>
 	  <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
     <script src="product.js"></script>
+    <script>
+    switch(Math.floor(Math.random()*3)){
+          
+      case 0:
+        document.getElementById('ad').src = "fBayimages/jewelryad.png";
+        document.getElementById("adlink").href = "https://diamondsdirect.com";
+        break;
+      case 1:
+        document.getElementById('ad').src = "fBayimages/moviead.png";
+        document.getElementById("adlink").href = "https://breakthroughmovie.com";
+        break;
+      case 2:
+        document.getElementById('ad').src = "fBayimages/thermosad.png";
+        document.getElementById("adlink").href = "https://www.thermos.com";
+        break;
+           
+    }
+    </script>
   </body>
 </html>

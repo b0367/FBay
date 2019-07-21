@@ -9,16 +9,17 @@
   </head>
   <body>
 	  <header>
-		  <div id='headerbar'>
+      <div id='headerbar'>
 			<nav>
 				<a href="products.html">Products</a>&nbsp&nbsp&nbsp&nbsp&nbsp|
 				<a href="about.html">About</a>&nbsp&nbsp&nbsp&nbsp&nbsp|
-        <a href='#newreleases'>New Releases</a>
+        <a href='index.html#newreleases'>New Releases</a>
         <div class='dropdown'>
           <span id='myaccountbutton'><a href="account.html">My Account</a></span>
           <div class='dropdown-content'><ul>
             <li><a href='debt.html'>Debt</a></li>
-            <li><a href='settings.html'>Settings</a></li>
+            <li><a href='register.html'>Settings</a></li>
+            <li><a href='login.html'>Login</a></li>
             </ul></div>
         </div>
 			</nav>
@@ -28,7 +29,7 @@
 		  <img src="fBayimages/logo.jpg" alt="fbay" id="logo">
       </a>
         <input type="text" placeholder="Search for anything" id='searchbar'>
-        <input type="button" value="Search" id='searchbutton'></a>
+        <a href="products.html"><input type="button" value="Search" id='searchbutton'></a>
 	  </header>
 	  <main>
 
@@ -123,7 +124,7 @@
         </div>
       </div>
       
-      
+      <button onclick="jumpTop()" id="topBtn" title="Go to top"><b>^</b></button>
       
 	  </main>
     <script src="gallery.js"></script>

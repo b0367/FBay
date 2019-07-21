@@ -6,6 +6,7 @@
 		<title>fBay</title>
         <link rel="icon" href="fBayimages/logo.jpg">
 		<link href="style.css" rel="stylesheet" type="text/css" />
+    <script src='register.js'></script>
 	</head>
 	<body>
 		<header>
@@ -13,12 +14,13 @@
 			<nav>
 				<a href="products.html">Products</a>&nbsp&nbsp&nbsp&nbsp&nbsp|
 				<a href="about.html">About</a>&nbsp&nbsp&nbsp&nbsp&nbsp|
-        <a href='#newreleases'>New Releases</a>
+        <a href='index.html#newreleases'>New Releases</a>
         <div class='dropdown'>
           <span id='myaccountbutton'><a href="account.html">My Account</a></span>
           <div class='dropdown-content'><ul>
             <li><a href='debt.html'>Debt</a></li>
-            <li><a href='settings.html'>Settings</a></li>
+            <li><a href='register.html'>Settings</a></li>
+            <li><a href='login.html'>Login</a></li>
             </ul></div>
         </div>
 			</nav>
@@ -28,19 +30,19 @@
 		  <img src="fBayimages/logo.jpg" alt="fbay" id="logo">
       </a>
         <input type="text" placeholder="Search for anything" id='searchbar'>
-        <input type="button" value="Search" id='searchbutton'></a>
+        <a href="products.html"><input type="button" value="Search" id='searchbutton'></a>
 	  </header>
 		<main>
 			<form>
         <h2>Account Info</h2><br>
         <div id='form'>
           Username: <br>
-          <input type='text' name='username'><br><br>
+          <input type='text' name='username' id='username'><br><br>
           Password: <br>
-          <input type='password' name='password'><br><br>
+          <input type='password' name='password' id='password'><br><br>
           Email: <br>
-          <input type='email' name='email'><br><br>
-          <input type='submit' value='Update'>
+          <input type='email' name='email' id='email'><br><br>
+          <input type='button' value='Register' onclick='return Register();'>
         </div>
 			</form>
 		</main>
